@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTION CUT</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="price-landing.css">
+     <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 400px; /* Adjust the maximum width as needed */
+        	width: 100%;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            position: absolute;
+        	top: 10px;
+       	 	right: 10px;
+        	font-size: 20px;
+        	color: #333;
+        }
+        
+        .about-content {
+            display: none;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body background="pic.png.png">
+    <header>
+        <h1>MOTION CUT</h1>
+		<img src="C:\Users\ragha\Downloads\pic.png.png"
+		width="1200px" height="800px">
+    </header>
+    <section class="nav">
+      
+      <nav class="navbar">
+        <button><a href="#" onclick="navigate('home')">Home</a></button>
+        <button><a href="#" onclick="navigate('about')">About</a></button>
+        <button><a href="#" onclick="openContactModal()">Contact</a></button>
+    </nav>
+
+      
+    </section>
+    <main>
+        <section id="basic-plan" class="pricing-section">
+            <h2>STARTER </h2>
+            <p>Our basic plan is perfect for small businesses and individuals.</p>
+			<p>✓ Your Text Here<p>
+			<p>X Sample Text Here<p>
+			<p>X Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p class="green-checkmark">✓ Your Text Here</p>
+            <strong><p>PRICE : $19.99/month</p></strong>
+            <button id="basic-plan-btn" class="signup-btn">Sign Up</button>
+        </section>
+        <section id="premium-plan" class="pricing-section">
+            <h2>PREMIUM </h2>
+            <p>Our premium plan is ideal for larger businesses and teams.</p>
+			<p>✓ Your Text Here<p>
+			<p>✓ Sample Text Here<p>
+			<p>X Text Here<p>
+			<p>X Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+            <strong><p>PRICE: $49.99/month</p></strong>
+            <button id="premium-plan-btn" class="signup-btn">Sign Up</button>
+        </section>
+        <section id="enterprise-plan" class="pricing-section">
+            <h2>ENTERPRISE </h2>
+            <p>Our enterprise plan is customized to meet the unique needs of your business.</p>
+			<p>✓ Your Text Here<p>
+			<p>✓ Sample Text Here<p>
+			<p>✓ Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+			<p>✓ Your Sample Text Here<p>
+            <button id="enterprise-plan-btn" class="contact-btn">Contact Us</button>
+       <section>
+       <section id="about-content" class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Motion Cut, where we bring your creative visions to life through powerful and user-friendly video editing tools.</p>
+            <!-- Add more about us content here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Our Company. All rights reserved.</p>
+    </footer>
+     <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Email: info@yourcompany.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <!-- Add any additional contact information as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function navigate(section) {
+            // Add logic to navigate to the corresponding section based on the button clicked
+            console.log('Navigating to:', section);
+        }
+        function navigate(section) {
+    if (section === 'about') {
+        window.open('about.html.html', '_blank');
+    }
+}
+
+        function openContactModal() {
+            document.getElementById('contactModal').style.display = 'flex';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
